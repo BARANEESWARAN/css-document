@@ -1,0 +1,9 @@
+.App{
+  height: 200vh;
+  padding: 3rem;
+
+}
+.App .text{
+  color: blue;
+  font-size: 12px !important;
+}

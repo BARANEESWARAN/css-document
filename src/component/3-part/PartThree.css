@@ -1,0 +1,110 @@
+a[target]{
+    color: black;
+    background-color: blueviolet;
+}
+a[target ='_blank']{
+    background-color: chartreuse;
+    color: black;
+}
+
+.attributeselectors__container > .attribute img[title ~='water']{
+ border: 5px solid red;
+}
+
+/* first strting word red nu vantha mattum (red,red-text) */
+.attributeselectors__container p[class |='red'] {
+    color: blue;
+}
+/* first strting word blue nu vantha mattum and all classname have starting blue(red,red-text and bluetext) */
+
+ .attributeselectors__container p[class ^='blue'] {      /*bluetext */
+    color: blue;
+}
+
+
+/* endiling mattum check pannum aprm spac ekudutha kuda  work aakum aana mela iruka 2 method a space kudutha work aakathu */
+.attributeselectors__container p[class $='yellow'] {      /*bluetext */
+    color: yellow;
+}
+/*  */
+.attributeselectors__container p[class *='t'] {      /*bluetext */
+    background-color: brown;
+}
+
+/* <--------------------MATH properties---------------------> */
+.calc{
+    font-size: calc(50px + 50px);  
+ }
+.max{
+    font-size: max(24px,18px);  
+ }
+.min{
+    font-size: min(100%,18px);  
+ }
+
+
+ /* <--------------------CSS GRADIENT properties---------------------> */
+
+ .gradient__one{
+    height: 100px;
+    background-image: linear-gradient(red,yellow);
+ }
+ .gradient__two{
+    height: 100px;
+    background-image: linear-gradient(to right,red,yellow);
+ }
+ .gradient__three{
+    height: 100px;
+    background-image: linear-gradient(to bottom right,red,yellow);
+ }
+
+ .g4{
+    height: 100px;
+    background-image: linear-gradient(180deg,red,yellow); 
+ }
+ .g5{
+    height: 100px;
+    background-image: linear-gradient(to right,rgba(255,0,0,0.2),rgba(255,0,0,1)); 
+ }
+ .g6{
+    height: 100px;
+    background-image: repeating-linear-gradient(red,yellow 20%,blue 50%); 
+ }
+ /* Radial Gradient Background */
+.g7 {
+    height: 200px;
+    width: 200px;
+    background: radial-gradient(circle, #ff0000, #00ff00);
+}
+.g8 {
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(yellow,green,red);
+}
+.g9{
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(yellow 0deg,green 90deg,red,blue,orange);
+}
+
+.g9{
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(red 0deg,red 90deg,yellow 90deg,yellow 180deg,green 180deg,green 270deg,blue 270deg);
+}
+
+
+.textshadow__container .textshadow{
+   text-shadow: 2px 2px 5px red,-5px -5px 10px yellow;
+}
+
+
+
+
+
+
+
+
+
+
+

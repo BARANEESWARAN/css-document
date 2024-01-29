@@ -1,0 +1,260 @@
+
+/* ========================TEXT PROPERTIES======================= */
+
+.text-decoration{
+    padding: 2rem;
+}
+.text{
+    width: 20%;
+    font-size: 6px;
+    vertical-align: super;
+}
+.text span{
+  font-size: 20px;
+  text-decoration-line:overline underline;
+  text-decoration-color: burlywood;
+  text-decoration-thickness: 10px;
+  text-decoration-style:wavy;
+  text-transform: uppercase;
+  /* text-decoration: overline yellow dashed 5px; */
+  text-shadow: 2px 2px 10px red;
+}
+.para{
+    text-indent: 20px;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    line-height: 5;
+    white-space: nowrap;
+    
+}
+
+
+/* ========================LINK HREF PROPERTIES======================= */
+
+a:link{
+    color: yellowgreen;
+    font-size: larger;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: darkblue;
+}
+
+/* ========================LIST PROPERTIES======================= */
+.a li{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+/* ========================TABLE PROPERTIES======================= */
+.table{
+    margin: 20px 50px;
+}
+table,th,td{
+    border: 1px solid ;
+    font-size: 14px;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: bottom;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+table tr th{
+    height: 70px;
+    background-color: black;
+    color: #fff;
+}
+table tr th td{
+    border-bottom: 1px solid;
+}
+tr:nth-child(even){
+background-color: burlywood;
+}
+
+/* <===================DISPLAY properties===========================>  */
+
+
+.display span{
+    display: block;
+}
+
+/* kela display inline height athuku mela iruka span varaikum pothu athuku pathila inline-block use pannanum */
+.display p{
+    background-color: bisque;
+    padding: 2rem;
+    display: inline;
+    margin-left: 5px;
+}
+.display h1 .inlineblock{
+    background-color: gold;
+    padding: 2rem;
+    display: inline-block;
+}
+
+/* <===================OVERFLOW properties===========================>  */
+
+.overflow p{
+    width: 25%;
+    background-color: chocolate;
+    height: 150px;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    /* overflow-x: scroll; */
+    overflow-y: hidden;
+}
+
+/* <===================FLOAT properties===========================>  */
+.left{
+    width: 50%;
+    background-color: darkcyan;
+    float: left;
+    height:auto;
+}
+.imgl{
+    float: left;
+    }
+.right{
+    width: 50%;
+    background-color: cornflowerblue;
+    float: right;
+    height:auto;
+}
+.imgr{
+    float: right;
+}
+
+
+/* <===================COMBINATORS properties===========================>  */
+
+/*1. combinators kulla irukura ella p including inside span kulla iruka p kuda */
+.combinators1 p{
+color: red;
+background-color: aquamarine;
+margin-bottom: 1rem;
+}
+
+/*2. span kulla iruka p varathu dirderect div p only */
+.combinators2 > p{
+color: red;
+background-color: aquamarine;
+margin-bottom: 1rem;
+}
+
+/*3,4. combinators3 finish aana odane first iruka p tag mattum*/
+.combinators3 + p{
+color: red;
+background-color: aquamarine;
+margin-bottom: 1rem;
+}
+.combinators4 + p{
+color: red;
+background-color: aquamarine;
+margin-bottom: 1rem;
+}
+
+/*5,6.combinators3 finish aana odane first muttum ila last div finish aaki vara ella p um select aakm*/
+
+
+.combinators5 ~ p{
+    color: red;
+    background-color: aquamarine;
+    margin-bottom: 1rem;
+    }
+
+/* <===================PSEUDO CLASS properties===========================>  */
+
+.pseudo__container .highlight:hover{
+font-size: 18px;
+color: darkblue;
+background-color: #f6f6f6;
+}
+
+.pseudo__container1 div p{
+    display: none;
+    background-color: chartreuse;
+    padding: 5rem;
+}
+.pseudo__container1 div:hover p{
+    display: block;
+}
+ p:first-child{
+    color: burlywood;
+}
+
+p b:first-child{
+color: blueviolet;
+}
+
+p b:last-child{
+    color: forestgreen;
+}
+.pseudo__container3 ul li:nth-child(even){
+
+    background-color: darkcyan;
+}
+
+.pseudo__container3 p{
+    color: deeppink;
+}
+.pseudo__container3:not(p){
+    color: lightskyblue;
+}
+
+/* <===================PSEUDO ELEMENT===========================>  */
+
+.pseudoelement__container p::first-letter{
+    color: chocolate;
+    font-size: 30px;
+}
+
+.pseudoelement__container p::first-line{
+color: blue !important;
+}
+
+.pseudoelement__container h3::before {
+content: "Hi :)";
+color: crimson;
+}
+.pseudoelement__container h3::after {
+content: "Hi :)";
+color: crimson;
+}
+
+.pseudoelement__container h3::selection{
+    background-color: yellow;
+}
+::marker{
+    color: deeppink;
+    font-size: 26px;
+}
+
+
+
+/* <===================Img gallery ===========================>  */
+.imggallery__container{
+    width: 880px;
+    
+
+}
+.imggallery img{
+    width: 100%;
+ 
+}
+.imggallery__container .imggallery{
+    float: left;
+    margin: 5px;
+}
+
+
+
+  
+  
